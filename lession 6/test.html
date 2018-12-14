@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style type="text/css">
+		#container{
+			width: 100%;
+			/*background-color: red;*/
+		}
+		.header{
+			width: 100%;
+			height: 100px;
+			/*background-color: blue;*/
+		}
+		.header ul{
+		height: 100%;
+		line-height: 100px;
+		}
+		.header ul li{
+		display: inline;
+		padding: 15px 0px;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		list-style: none;
+		
+		text-decoration: none;
+		color: gray;
+		padding: 20px;
+		font-weight: 700;
+		}
+		.header_left{
+			width: 43%;
+			float: left;
+		/*	background-color: red;*/
+		}
+		.header_right{
+		width: 43%;
+		float: right;
+		}
+		.logo{
+		width: 14%;
+		float: left;
+		}
+		.logo img{
+		/*z-index: 1;*/
+		height: auto;
+		width: 90%;
+		}
+		.header_left ul{
+		float: right;
+		}
+		.header_right ul{
+		float: left;
+		}
+		.content{
+		width: 100%;
+		height: 900px;
+		/*background-color: yellow;*/
+		}
+		.content h1{
+		/*clear: both;*/
+		padding-top: 50px;
+		text-align: center;
+		color: #46b2a2;
+		font-size: 300%;
+		
+		}
+		.content h3{
+		text-align: center;
+		margin-top: 20px;
+		color: gray;
+		}
+		.info{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 40px;
+		padding-bottom: 40px;
+		/*background-color: red;*/
+		height: 604px;
+		}
+		.table1{
+			width: 100%;
+			height: 321px;
+			background-color: whitesmoke;
+		/*	border: 2px solid black*/;
+		}
+		.table2{
+			width: 100%;
+			height: 311px;
+			background-color: whitesmoke;
+			/*border: 2px solid black;*/
+		}
+		.info-child{
+		width: 30%;
+		height: 300px;
+		margin: 1%;
+		display: inline-block;
+		/*background-color: brown;*/
+		}
+		.top{
+		width: 100%;
+		height: 70%;
+		border: 5px solid whitesmoke;
+		}
+		.img1{
+		background-image: url('images/euroloo.co.uk.png');
+		background-size: cover;
+		}
+		.img2{
+			background-image: url('images/badabooshforschools.co.uk.png');
+			background-size: cover;
+		}
+		.img3{
+			background-image: url('images/badaboosh.co.uk.png');
+			background-size: cover;
+		}
+		.img4{
+			background-image: url('images/sellmymobile.com.png');
+			background-size: cover;
+		}
+		.img5{
+			background-image: url('images/randrbridalwear.co.uk.png');
+			background-size: cover;
+		}
+		.img6{
+			background-image: url('images/vouchercodedeals.com.png');
+			background-size:cover;
+		}
+		.bottom{
+			width: 100%;
+			height: 75px;
+			background-color: white;
+			/*border: 2px solid black;*/
+		}
+		.bottom h3{
+		text-align:left !important;
+		margin-top: 0px;
+		color: #46b2a2;
+		}
+		.about{
+			width: 100%;
+			height: 365px;
+			/*background-color: green;*/
+		}
+		.left{
+			width: 50%;
+			height: 365px;
+			/*background-color: purple;*/
+			float: left;
+		}
+		.left h1{
+		color: #46b2a2;
+		margin-top: 20px;
+		font-size: 30px;
+		
+		font-weight: 700;
+		}
+		.left h3{
+		color: gray;
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight:100;
+		}
+		.right{
+			width: 50%;
+			height: 365px;
+			/*background-color: pink;*/
+			float: right;
+
+		}
+		.right h1{
+			color: #46b2a2;
+		}
+
+		.eclipse{
+			/*border-radius: 100px;
+			background:red;*/
+			width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		}
+		.eclipse1{
+			width: 8%;
+			height: 57px;
+			border-radius: 455px;
+			background-color: #46b2a2;
+			float: left;
+			margin-left: 35px;
+		}
+		.contact{
+			width: 100%;
+			height: 649px;
+			background-color: #46b2a2;
+		}
+		/*.contact_title{
+		width: 1300px;
+		margin: 0 auto;
+		}*/
+		.contact h1{
+		color: white;
+		margin-top: 20px;
+		font-size: 30px;
+		
+		font-weight: 700;
+		}
+		.contact h3{
+		color: black;
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight:100;
+		}
+		.contact-info{
+		width: 1300px;
+		margin: 0 auto;
+		}
+		.group{
+			width: 100%;
+			height: 84px;
+			/*background-color: yellow;*/
+			color: white;
+		}
+		.group1{
+			width: 100%;
+			height: 163px;
+			/*background-color: yellow;*/
+			color: white;
+		}
+		.about-info{
+		width: 1300px;
+		margin: 0 auto;
+		}
+		/*@media (min-width: 500px) and (min-width: 960px) {
+			.info-child {
+   				width: 47% !important;
+			}*/
+		/*@media (max-width: 700px) {
+			.info{
+	        width: 90%;
+	    }
+	    .info-child{
+	        width: 46%;
+	    }
+	    .about-info{
+	        width: 90%;
+	    }
+	    .left{
+	        width: 100%;
+	    }
+	    .right{
+	        width: 100%;
+	        padding-bottom: 20px;
+	    }
+	    .contact-info{
+	        width: 90%;
+	    }*/
+	    
+			/*.info{
+				width: 100%;
+			}
+			.info_child{
+				width: 46%;
+			}
+			
+			.about{
+				width: 100%;
+			}
+			.left{
+	       	 	width: 100%;
+	    	}
+	    	.right{
+        		width: 100%;
+        	/*	/*padding-bottom: 20px;*/
+    		/*}
+			.contact{
+				width: 100%;
+			}*/
+		
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="header">
+			<div class="header_left">
+				<ul>
+					<li>WORK</li>
+					<li>ABOUT</li>
+				</ul>
+			</div>
+			<div class="logo" align="center">
+				<img src="images/logo-sm.png">
+			</div>
+			<div class="header_right">
+				<ul>
+					<li>CONTACT</li>
+					<li>BLOG</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="content">
+			<h1>I design and make cool things for the web<br> & mobile devices</h1>
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h3>
+			
+			<div class="info">
+				<!-- <div class="table1"> -->
+					<div class="info-child">
+						<div class="top img1">
+							
+						</div>
+						<div class="bottom">
+							<h3>Zent Group</h3>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</h4>
+						</div>
+					</div>
+					<div class="info-child">
+						<div class="top img2">
+							
+						</div>
+						<div class="bottom">
+							<h3>Zent Group</h3>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</h4>
+						</div>
+					</div>
+					<div class="info-child">
+						<div class="top img3">
+							
+						</div>
+						<div class="bottom">
+							<h3>Zent Group</h3>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</h4>
+						</div>
+					</div>
+				<!-- </div> -->
+
+				<!-- <div class="table2"> -->
+					<div class="info-child">
+						<div class="top img4">
+							
+						</div>
+						<div class="bottom">
+							<h3>Zent Group</h3>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</h4>
+						</div>
+					</div>
+					<div class="info-child">
+						<div class="top img5">
+							
+						</div>
+						<div class="bottom">
+							<h3>Zent Group</h3>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</h4>
+						</div>
+					</div>
+					<div class="info-child">
+						<div class="top img6">
+							
+						</div>
+						<div class="bottom">
+							<h3>Zent Group</h3>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</h4>
+						</div>
+					</div>
+				<!-- </div> -->
+			</div>
+		</div>
+
+		<div class="about">
+			<div class="about-info">
+				<div class="left">
+				
+					<h1>About me</h1>
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum  Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+				
+				</div>
+				<div class="right">
+				<h1 style="margin-left: 44px">Stalker? Cool</h1>
+				<h3 style="margin-left: 44px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididun</h3>
+
+					<div class="eclipse">
+						<div class="eclipse1"></div>
+						<div class="eclipse1"></div>	
+						<div class="eclipse1"></div>
+						<div class="eclipse1"></div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="contact"> 
+			<div class="contact-info">
+				<h1 style="margin-left: 49px">Say hello</h1>
+				<h3 style="margin-left: 49px">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+			
+			<div class="group">
+				<p><h2 style="margin-left: 47px">Name</h2></p>
+				<input type="text" name="" value="" placeholder="Name" style="margin-left: 47px ;width:90%;height: 30px">
+			</div>
+			<div class="group">
+				<p><h2 style="margin-left: 47px">Email address</h2></p>
+				<input type="email" name="" value="" placeholder="email" style="margin-left: 47px;width: 90%;height: 30px">
+			</div>
+			<div class="group1">
+				<p><h2 style="margin-left: 47px">What's on your mind?</h2></p>
+				<input type="textarea" name="" placeholder="" style="margin-left: 47px;width: 90%;height: 106px">
+			</div>
+			<div class="group">
+				<p><h2 style="margin-left: 47px">2+2?</h2></p>
+				<input type="text" name="" value="" placeholder="" style="margin-left: 47px ;width:90%;height: 30px">
+			</div>
+			<br>
+			<div class="group">
+				<input type="button" name="sign" value="Send" placeholder="send" style="margin-left: 46px;width: 6%;height: 36px;background-color: green">
+				
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

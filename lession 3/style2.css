@@ -1,0 +1,36 @@
+#Body{
+	width: 60%;
+	font-family: arial;
+	font-size: 12px;
+	border: 5px;
+	
+
+}
+#head{
+	background-image: url(123.jpg);
+	width: 100%;
+	height: 350px;
+	
+}
+#menu{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: gray;
+	margin-top: -12px;
+}
+.mainmenu{
+	color: orange;
+	font-weight: bold;
+	float: left;
+	list-style: none;
+	text-indent: 20px
+}
+#b1{
+	background-color: white;
+
+}
+#center{
+	background-color: white;
+
+}
