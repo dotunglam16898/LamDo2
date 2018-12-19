@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script language="javascript">
+		var n,m,k=0,tong=0;
+		var n = prompt('Mời bạn nhập vào n');
+		
+		do {  
+			var m = prompt("Nhap m >=n : ");
+			
+			if(m < n) {
+				var m = prompt("Bạn cần phải nhập m >= n");
+				
+			}
+		} while (m < n);
+		var k = prompt("Nhap k: ");
+		
+		for (var i = n; i <= m; i++) {
+			if (i % k == 0) {
+				tong += i;
+			}
+		}
+		document.writeln("Tong cac so chia het cho k: " + tong);
+	</script>
+</body>
+</html>

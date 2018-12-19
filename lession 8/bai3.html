@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script language="javascript">
+		var n;
+		var tong=0;
+		var sn;
+		do{
+		sn=prompt("nhap so n duong");
+		n=parseInt(sn);
+		}
+		while(n<=0);
+		
+			for (var i = 1; i <=n; i++) {
+				tong += 1/i;
+			}
+		
+		document.writeln("Tong la"+ tong);
+	</script>
+</body>
+</html>

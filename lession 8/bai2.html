@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<script language="javascript">
+		var mang=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+		function tong_so_chan(mang){
+			var tong=0;
+			for (var i = 0; i < mang.length; i++) {
+				if (mang[i]%2==0) {
+					tong += mang[i];
+				}
+			}
+			return tong;
+		}
+		document.writeln("Tong 10 so chan la"+ tong_so_chan(mang));
+	</script>
+</body>
+</html>
