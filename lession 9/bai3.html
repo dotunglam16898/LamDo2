@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+			
+			#content {
+				width: 60%;
+				height: 300px;
+				margin: 0 auto;
+				margin-top: 50px;
+				
+			}
+			#color{
+				background-color: grey;
+			}
+			.tabs {
+				width: 100%;
+				height: 23%;
+			
+				background-color: red;
+			}
+			.tab {
+				width: 20%;
+				height: 100%;
+				
+				cursor: pointer;
+				margin-right: 5px;
+				background: yellow;
+				float: left;
+				text-align: center;
+				font-weight: bold;
+			}
+			#btn-tab1 {
+				background-color: white;
+			}
+			#btn-tab2 {
+				color: black;
+			}
+			#btn-tab3 {
+				color: black;
+			}
+
+			.box-content {
+				width: 100%;
+				height: 90%;
+				padding: 1%;
+				
+				background: white;
+			}
+			#content_tab1 {
+				display: block;
+			}
+			#content_tab2 {
+				display: none;
+			}
+			#content_tab3 {
+				display: none;
+			}
+	</style>
+	
+</head>
+<body id="color">
+	
+		<div id="content">
+			<div class="tabs">
+				<div class="tab" id="btn-tab1" onclick="tab1()">
+					<h2>Tab1</h2>
+				</div>
+				<div class="tab" id="btn-tab2" onclick="tab2()">
+					<h2>Tab2</h2>
+				</div>
+				<div class="tab" id="btn-tab3" onclick="tab3()">
+					<h2>Tab3</h2>
+				</div>
+			</div>
+			
+			<div class="box-content">
+				<div id="content_tab1">
+					<h1>Section 1</h1>
+					<br/>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div id="content_tab2">
+					<h1>Section 2</h1>
+					<br/>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					abckkkduhuahdasuhfh</p>
+				</div>
+				<div id="content_tab3">
+					<h1>Section 3</h1>
+					<br/>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					</p>
+				</div>
+			</div>
+		</div>
+
+<script type="text/javascript">
+			function tab2(){
+			var content_tab2= document.getElementById("content_tab2");
+			content_tab2.style.display="block";
+			var content_tab1= document.getElementById("content_tab1");
+			content_tab1.style.display="none";
+			var content_tab3= document.getElementById("content_tab3");
+			content_tab3.style.display="none";
+
+			document.getElementById('btn-tab1').style.background="yellow";
+			document.getElementById('btn-tab3').style.background="yellow";
+			document.getElementById('btn-tab2').style.background="white";
+			}
+
+			function tab1(){
+			var content_tab1= document.getElementById("content_tab1");
+			content_tab1.style.display="block";
+			var content_tab2= document.getElementById("content_tab2");
+			content_tab2.style.display="none";
+			var content_tab3= document.getElementById("content_tab3");
+			content_tab3.style.display="none";
+
+			document.getElementById('btn-tab3').style.background="yellow";
+			document.getElementById('btn-tab2').style.background="yellow";
+			document.getElementById('btn-tab1').style.background="white";
+			}
+
+			function tab3(){
+			var content_tab3= document.getElementById("content_tab3");
+			content_tab3.style.display="block";
+			var content_tab1= document.getElementById("content_tab1");
+			content_tab1.style.display="none";
+			var content_tab2= document.getElementById("content_tab2");
+			content_tab2.style.display="none";
+
+			document.getElementById('btn-tab1').style.background="yellow";
+			document.getElementById('btn-tab2').style.background="yellow";
+			document.getElementById('btn-tab3').style.background="white";
+			}
+</script>
+		
+</body>
+</html>

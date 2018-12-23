@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#box{
+			width: 50%;
+			height: 400px;
+			background-color: #93afb9;
+		}
+		.box1{
+			border: 1px solid black;
+			height: 52px;
+		}
+		.box-child{
+			border: 1px solid black;
+			width:10%;
+			height: 50px;
+			float: left;
+			line-height: 50px;
+
+
+		}
+		.text{
+			height:50px;
+			border: 1px solid black;
+			
+		}
+		.box1 :hover{
+			background-color:green;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="box1" >
+			<div class="box-child" align="center" >
+				<input type="checkbox" name="a" value="" >
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box-child" align="center">
+				<input type="checkbox" name="a" value="" >
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box-child" align="center">
+				<input type="checkbox" name="a" value="" >
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box-child" align="center">
+				<input type="checkbox" name="a" value="" >
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box-child" align="center">
+				<input type="checkbox" name="a" value="" >
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box-child" align="center">
+				<input type="checkbox" name="a" value="" ">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			
+			</div>
+		</div>
+		<input type="button" name="kiem_tra" value="check all" onclick="checkall()">
+		<input type="button" name="xoa_ktra" value="Uncheck all" onclick="uncheckall()">
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+
+		function checkall(){
+			var checkbox = document.getElementsByName('a');
+
+
+            for (var i = 0; i < checkbox.length; i++){
+                checkbox[i].checked = true;
+            }
+		}
+		function uncheckall() {
+			var checkbox = document.getElementsByName('a');
+			for (var i = 0; i < checkbox.length; i++) {
+				checkbox[i].checked =false;
+			}
+		}
+	</script>
+</body>
+</html>

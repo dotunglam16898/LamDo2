@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="title">
+		<h2>Co chu</h2>
+		
+		<input type="button" name="Nho" id="small" value="Nhỏ" onclick="decrease()">
+		<input type="button" name="macDinh" id="normal" value="Mặc Định" onclick="mac_dinh()">
+		<input type="button" name="Lon" id="big" value="Lớn" onclick="increase()">
+	</div>
+	<span id="content" style="font-size: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </span>
+
+	<script type="text/javascript">
+		function increase(){
+			
+			
+			
+			var a = document.getElementById("content").style.fontSize;
+			var b = a.replace('px','');
+			var c = parseFloat(b);
+			document.getElementById("content").style.fontSize = (c + 4) + "px";
+			
+		}
+		function decrease(){
+			
+			
+			
+			var a = document.getElementById("content").style.fontSize;
+			var b = a.replace('px','');
+			var c = parseFloat(b);
+			document.getElementById("content").style.fontSize = (c - 4) + "px";
+			
+		}
+
+		function mac_dinh(){
+			 
+			 document.getElementById("content").style.fontSize="20px";
+		}
+	</script>
+</body>
+</html>
