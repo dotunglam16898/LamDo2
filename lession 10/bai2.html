@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#container{
+			width: 73%;
+			height: 437px;
+			border: 1px solid black;
+			margin: 0 auto;
+			margin-top: 50px;
+			border-radius: 10px;
+		}
+		.content1{
+			height:58px;
+			/*background-color: whitesmoke;*/
+		}
+		.text{
+			/*border: 1px solid black;*/
+			width:37%;
+			height: 50px;
+			float: left;
+			/*line-height: 50px;*/
+		}
+		.box{
+			height: 50px;
+			line-height: 52px;
+		}
+		.button1{
+			color: white;
+			background-color: red;
+			cursor: pointer;
+		}
+		span{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="container" >
+		<div class="content1">
+			<div class="text">
+				<p>Họ Và Tên</p>
+			</div>
+			<div class="box">
+				<input type="text"  placeholder="Nhập họ tên" style="width: 36%" id="name2" class="name1"><span class="nameerr"></span>
+			</div>
+		</div>
+		<div class="content1">
+			<div class="text">
+				<p>Giới Tính</p>
+			</div>
+			<div class="box">
+				Nam<input type="radio" name="gender" value="" placeholder="" >
+				Nữ<input type="radio" name="gender" value="" placeholder="">
+			</div>
+		</div>
+		<div class="content1">
+			<div class="text">
+				<p>Email</p>
+			</div>
+			<div class="box">
+				<input type="email" class="form_control" name="email"  placeholder="Nhập email dạng abc@example.com" style="width: 36%" ><span class="emailerr"></span>
+			</div>
+		</div>
+		<div class="content1">
+			<div class="text">
+				<p>Số Điện Thoại</p>
+			</div>
+			<div class="box">
+				<input type="text" name="" class="phone" placeholder="Nhập SĐT" style="width: 36%"><span class="numberr"></span>
+			</div>
+		</div>
+		<div class="content1">
+			<div class="text">
+				<p>Mật Khẩu</p>
+			</div>
+			<div class="box">
+				<input type="password" name="" class="mat_khau" placeholder="" style="width: 36%"><span  class="passworderr"></span>
+			</div>
+		</div>
+		<div class="content1">
+			<div class="text">
+				<p>Xác nhận mật khẩu</p>
+			</div>
+			<div class="box">
+				<input type="password" name="" class="confirm_password" placeholder="" style="width: 36%"><span class="confirmpw"></span>
+			</div>
+		</div>
+		<input type="button" name="sign_in" class="button1" value="Đăng Ký" style="margin-top: 40px;
+    margin-left: 232px;margin-right: 48px;" onclick="checkValue()">
+		<input type="button" name="delete" class="button1" value="Xóa Trắng">
+	</div>
+
+
+	<script type="text/javascript">
+		var check=false;
+		var name1 = document.getElementsByClassName('name1')[0];
+		name1.addEventListener("blur", function(){
+			if(name1.value.trim()==''){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Mời bạn nhập tên";
+			}
+			else if(name1.value.length<8){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Tên Phải lớn hơn 8 kí tự";
+			}
+			else{
+				document.getElementsByClassName('nameerr')[0].innerHTML="";
+			}
+		});
+
+		var form_control =document.getElementsByClassName('form_control')[0];
+		
+		var checkMail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		form_control.addEventListener("blur", function(){
+			if (form_control.value.trim()=='') {
+				document.getElementsByClassName('emailerr')[0].innerHTML="Mời bạn nhập email"
+			}
+			else if (form_control != checkMail) {
+				document.getElementById('emailerr').innerHTML="Nhập đúng định dạng abc@domain.xyz";
+				check=false;
+			}
+		});
+
+		var phone=document.getElementsByClassName('phone')[0];
+		phone.addEventListener("blur",function(){
+			if (phone.value.trim()=='') {
+
+				document.getElementsByClassName('numberr')[0].innerHTML="mời bạn nhập SDT"
+			}
+			 if (isNaN(phone)==true) {
+				document.getElementsByClassName('numberr')[0].innerHTML="SDT phải ở dạng số"
+				
+			}
+			else {
+				document.getElementsByClassName('numberr')[0].innerHTML="";
+				
+			}
+		});
+
+		var mat_khau=document.getElementsByClassName('mat_khau')[0];
+		mat_khau.addEventListener("blur",function(){
+			if (mat_khau.value.trim()=='') {
+				document.getElementsByClassName('passworderr')[0].innerHTML="mời bạn nhập mật khẩu"
+			}
+			else if (mat_khau.value.length<8) {
+				document.getElementsByClassName('passworderr')[0].innerHTML="Mật Khẩu phải lớn hơn 8 kí tự";
+				check=false;
+			}
+			else {
+				document.getElementsByClassName('passworderr')[0].innerHTML="";
+				check = true;
+			}
+		});
+
+
+		var confirm_password=document.getElementsByClassName('confirm_password')[0];
+
+		confirm_password.addEventListener("blur",function(){
+			if (confirm_password.value.trim()=='') {
+				document.getElementsByClassName('confirmpw')[0].innerHTML="mời bạn xác nhận mât khẩu"
+			}
+			else if ((mat_khau!=confirm_password||confirm_password.length<8)) {
+				document.getElementsByClassName('confirmpw')[0].innerHTML="nhập lại mật khẩu không chính xác";
+				check = false;
+			}
+			else {
+				document.getElementsByClassName('confirmpw')[0].innerHTML="";
+				check = true;
+			}
+		});
+
+		function checkValue(){
+			if (check==true) {
+				alert("Đăng ký thành công!")
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#slide_show{
+			width: 60%;
+			height: 400px;
+			margin: 0 auto;
+			position: relative;
+			margin-top: 50px;
+		}
+		.img-slide{
+			max-width: 100%;
+			min-width: 100%;
+			max-height: 100%;
+			min-height: 100%;
+		}
+		#prev{
+			position: absolute;
+			width: 7%;
+			height: 50px;
+			background: #2f2c2c52;
+			text-align: center;
+		    top: 176px;
+		    border-radius: 5px;
+		    left: 15px;
+		    z-index: 1;
+		    line-height: 48px;
+		    cursor: pointer;
+		}
+		#next{
+			position: absolute;
+			width: 7%;
+			height: 50px;
+			background: #2f2c2c52;
+			text-align: center;
+		    top: 176px;
+		    border-radius: 5px;
+		    right: 15px;
+		    z-index: 1;
+		    line-height: 48px;
+		    cursor: pointer;
+		}
+		#menu{
+			position: absolute;
+			width: 30%;
+			z-index: 1;
+			height: 20px;
+			
+			right: 15px;
+			bottom: 10px;
+			cursor: pointer;
+		}
+		.menu-child{
+			width: 10%;
+			height: 100%;
+			float: left; 
+			border: 1px solid black;
+			margin-left: 10px;
+			background: #cccccc21;
+
+		}
+		#menu :hover{
+			background-color: blue;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../lession 4/css/font-awesome.css">
+</head>
+<body>
+	<center id="slide_show">
+		<img src="item1.png" class="img-slide">
+		<img src="item10.png" class="img-slide">
+		<img src="item11.png" class="img-slide">
+		<img src="item7.png" class="img-slide">
+
+		<!-- <div class="button_slide">
+			<input type="button" name="" value="prev"  onclick="previous()">
+			<input type="button" name="" value="next" onclick="next()">
+		</div> -->
+		<div id="prev" onclick="previous()">
+			<span class="fa fa-angle-left angle"></span>
+		</div>
+		<div id="next" onclick="next()">
+			<span class="fa fa-angle-right angle"></span>
+		</div>
+
+		<div id="menu">
+			<div class="menu-child " onclick="showSlide2(0)"></div>
+			<div class="menu-child" onclick="showSlide2(1)"></div>
+			<div class="menu-child" onclick="showSlide2(2)"></div>
+			<div class="menu-child" onclick="showSlide2(3)"></div>
+		</div>
+	</center>
+
+	<script type="text/javascript">
+		var imgSlide =document.getElementsByClassName("img-slide");
+		var numSlide=0;
+		showSlide(0);
+
+
+		function next(){
+			numSlide ++;
+			if (numSlide >3) {
+				numSlide =0;
+			}
+			showSlide(numSlide);
+		}
+		function previous(){
+			numSlide --;
+			if (numSlide < 0) {
+				numSlide = 3;
+			}
+			showSlide(numSlide);
+		}
+		function showSlide(n){
+			for (var i = 0; i < imgSlide.length; i++) {
+				imgSlide[i].style.display ="none";
+			}
+
+			imgSlide[n].style.display = "block";
+		}
+		window.setInterval(function(){ 
+			next(); 
+		}, 3000);
+		
+		function showSlide2(n){
+			for (var i = 0; i < imgSlide.length; i++) {
+				imgSlide[i].style.display ="none";
+			}
+
+			imgSlide[n].style.display = "block";
+		}
+	</script>
+</body>
+</html>
