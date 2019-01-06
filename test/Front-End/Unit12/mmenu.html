@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>jQuery.mmenu demo</title>
+
+		
+		<!-- <link type="text/css" rel="stylesheet" href="../dist/jquery.mmenu.all.css" /> -->
+		<link rel="stylesheet" href="../Css/jquery.mmenu.all.css">
+		<link rel="stylesheet" href="../Css/animate.css">
+		<link rel="stylesheet" type="text/css" href="../../../lession 4/css/font-awesome.min.css">
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mmenu.all.js"></script>
+		<script type="text/javascript" src="../js/wow.min.js"></script>
+		<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+		<!-- <script type="text/javascript" src="../dist/jquery.mmenu.all.js"></script> -->
+		<style type="text/css">
+			.header{
+				height: 98px;
+   				/*background-color: red;*/
+   				background: -webkit-linear-gradient(#ff5800cc,#ff2053);
+			}
+			#menu{
+				/*background: -webkit-linear-gradient(#ff5800cc,#ff2053);*/
+			}
+			.content2{
+				
+				height:19px;
+			}
+			.main_menu{
+				color: white;
+				text-align: center;
+				
+				height: 600px;
+				background: -webkit-linear-gradient(#ff5800cc,#ff2053);
+			}
+			.box{
+				border: 1px solid white;
+				height: 73px;
+				width: 20%;
+				margin: 0 auto;
+				cursor: pointer;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'fx-menu-slide', 'shadow-page', 'shadow-panels', 'listview-large', 'pagedim-white' ],
+					iconPanels	: true,
+					counters	: true,
+					keyboardNavigation : {
+						enable	: true,
+						enhance	: true
+					},
+					searchfield : {
+						placeholder	: 'Search menu items'
+					},
+					navbar : {
+						title : 'Advanced menu'
+					},
+					navbars	: [
+						{
+							position	: 'top',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'top',
+							content		: [ 'breadcrumbs', 'close' ]
+						}, {
+							position	: 'bottom',
+							content		: [ '<a href="http://mmenu.frebsite.nl/wordpress-plugin" target="_blank">WordPress plugin</a>' ]
+						}
+					]
+				}, {
+					searchfield : {
+						clear : true
+					}
+				});
+			});
+		</script>
+		<script>
+    		new WOW().init();
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"><span class="fa fa-bars" style="color: white;"></span></a>
+				<h1 style="margin-left: 46px; color: white;font-style: italic;">WordPress responsive menu</h1>
+			</div>
+			<!-- <div class="content">
+				<p><strong>This is an advanced demo.</strong><br />
+					Click the menu icon to open the menu.</p>
+			</div> -->
+			<div class="content2">
+				<h3 style="float: right;margin-right: 107px;">Menu above fully with responsive menu pro | <span style="color: red;">Get it now</span></h3>
+			</div>
+			<div class="main_menu">
+				<p style="padding-top: 67px;font-size: 300%;">WordPress Responsive Menu Plugin</p>
+				<h1>Taking the stress out of building your website</h1>
+
+				<div>
+					<div class="box wow flash">
+						<h2>Get it now</h2>
+					</div>
+				</div>
+			</div>
+			
+			<nav id="menu">
+				<ul>
+					<li><a href="#" class="fa fa-home">Home</a></li>
+					<li><span class="fa fa-question-circle">About us</span>
+						<ul>
+							<li><a href="#about/history" class="fa fa-bookmark">History</a></li>
+							<li><span class="fa fa-users">The team</span>
+								<ul>
+									<li><a href="#about/team/management" class="fa fa-male" >Management</a></li>
+									<li><a href="#about/team/sales" class="fa fa-money">Sales</a></li>
+									<li><a href="#about/team/development" class="fa fa-level-up">Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#about/address" class="fa fa-address-card">Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact" class="fa fa-envelope">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
