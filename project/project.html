@@ -4,36 +4,32 @@
 	<title></title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist/css/bootstrap.css">
-	<script type="text/javascript" src="bootstrap-4.2.1-dist/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="bootstrap-4.2.1-dist/js/bootstrap.js"></script>
-	<script type="text/javascript" src="bootstrap-4.2.1-dist/js/index.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-	<script type="text/javascript" src="bootstrap-4.2.1-dist/js/jquery.counterup.min.js"></script>
-	<script type="text/javascript" src="bootstrap-4.2.1-dist/js/wow.min.js"></script>
+	
+	
+	
 	<link rel="stylesheet" type="text/css" href="../lession 4/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist/css/style1.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 	<div class="bigg">
 		<div class="parallax"></div>
-		<div class="container-fluid" id="header">
+		<div class="container-fluid row header navbar-fixed-top menu-scroll" >
 
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="header-logo">
+				<div class="header-logo col-lg-8 col-md-8 col-sm-8">
 					<img src="nhom 3/images/logo.png">
 				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse " id="navbarText">
+				<div class="collapse navbar-collapse col-lg-4 col-md-4 col-sm-4" id="navbarText" style="text-align: right;">
 					<ul class="navbar-nav mr-auto">
 					</ul>
 					<span class="navbar-text">
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active padd">
-								<a class="nav-link white" href="#">HOME<span class="sr-only">(current)</span></a>
+							<li class="nav-item active padd white">
+								<a class="nav-link " href="#">HOME<span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item padd">
 								<a class="nav-link white" href="#">SERVICE</a>
@@ -42,13 +38,13 @@
 								<a class="nav-link white" href="#">TEAMS</a>
 							</li>
 							<li class="nav-item padd">
-								<a class="nav-link white">WORKS</a>
+								<a class="nav-link white" href="#">WORKS</a>
 							</li>
 							<li class="nav-item padd">
-								<a class="nav-link white">TESTIMONIAL</a>
+								<a class="nav-link white" href="#">TESTIMONIAL</a>
 							</li>
 							<li class="nav-item padd">
-								<a class="nav-link white">CONTACT</a>
+								<a class="nav-link white" href="#">CONTACT</a>
 							</li>
 							<li class="nav-item padd">
 								<a class="nav-link fa fa-search"></a>
@@ -62,7 +58,7 @@
 		<div class="container bigg-child">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				
-				<ol class="carousel-indicators">
+				<ol class="carousel-indicators indicator">
 					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active first"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="1" class="first"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="2" class="first"></li>
@@ -80,20 +76,20 @@
 							<p align="center" style="font-family: 'Raleway', sans-serif;">We Make Awesome Theme For Your Business</p>
 							<!-- <center class="monster-child"><button type="button" class="btn btn-secondary learn">LEARN MORE</button></center>	 -->
 							<center>
-							<a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: #ff8a00;">LEARN MORE</a></center>
-						</div>
-						<div class="carousel-item white monster">
-							<p align="center" class="white f-size" style=" font-family: 'Montserrat', sans-serif;">WELCOME TO OUR LOGIC</p>
-							<p align="center" style="font-family: 'Raleway', sans-serif;">We Make Awesome Theme For Your Business</p>
-							<!-- <center class="monster-child"><button type="button" class="btn btn-secondary learn">LEARN MORE</button></center> -->
-							<center>
-							<a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: #ff8a00;">LEARN MORE</a></center>
+								<a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: #ff8a00;">LEARN MORE</a></center>
+							</div>
+							<div class="carousel-item white monster">
+								<p align="center" class="white f-size" style=" font-family: 'Montserrat', sans-serif;">WELCOME TO OUR LOGIC</p>
+								<p align="center" style="font-family: 'Raleway', sans-serif;">We Make Awesome Theme For Your Business</p>
+								<!-- <center class="monster-child"><button type="button" class="btn btn-secondary learn">LEARN MORE</button></center> -->
+								<center>
+									<a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: #ff8a00;">LEARN MORE</a></center>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
 
-		</div>
+				</div>
 	<!-- <div class="container-fluid parallax ">
 		<div class="container">
 			<div class="row">
@@ -300,27 +296,18 @@
 
 		</div> -->
 		<div class=" fluid intro">
-			<div class="counter-img">
-				<img src="nhom 3/images/videobg.jpg" class="img-fluid" alt="Responsive image">
+			<div class="nigga">
+				<img src="nhom 3/images/videobg.jpg" class=" intro-child" alt="Responsive image" style="width: 100%;">
+				<!-- <img src="nhom 3/images/videobg.jpg" class="intro-child " style="width: 100%;"> -->
 			</div>
-			<!-- <div class="container container-counter">
-				<div class="row row-counter">
-					<a href="youtube.com"><img src="nhom 3/images/play.png" alt="play-icon" class="play col-lg-12 col-md-12 col-sm-12 col-12"></a>
-					<h3 class="col-lg-12 col-sm-12 col-md-12 col-12 white">WATCH OUT INTRO</h3>
-				</div>
-			</div> -->
-			<div class="container introo">
-				<div class="row roww">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-						<center>
-							<a href="youtube.com"><img src="nhom 3/images/play.png" alt="play-icon" class="col-lg-12 col-md-12 col-sm-12 col-12 play"></a>
-							<h3 class="col-lg-12 col-sm-12 col-md-12 col-12 white">WATCH OUT INTRO</h3>
-						</center>
-					</div>
-					
-					
+			<div class="container container-woman">
+				<div class="playboy">
+					<img src="nhom 3/images/play.png">
+					<!-- <img src="nhom 3/images/play.png" class="img-fluid intro-child" alt="Responsive image"> -->
+					<h2 class="text-map white" style="text-align: center;">WATCH OUT INTRO</h2>
 				</div>
 			</div>
+			
 		</div>
 		<br>
 		<br>
@@ -479,11 +466,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- <section id="counter" class="counter">
-			<div class="video_overlay">
-				
-			</div>
-		</section> -->
+		
 		<br>
 
 		<!-- <div class="container-fluid fluid">
@@ -507,7 +490,7 @@
 		<div class=" fluid">
 			<div class="counter-img">
 				<!-- <img src="nhom 3/images/counterbg.jpg" class="img-fluid" alt="Responsive image"> -->
-				<img src="nhom 3/images/counterbg.jpg" class="img-fluid">
+				<img src="nhom 3/images/counterbg.jpg"  alt="Responsive image" style="width: 100%;">
 			</div>
 			<div class="container container-counter">
 				<div class="row row-counter">
@@ -804,8 +787,149 @@
 				</div>
 			</div>
 		</div>
+		
 
-		<div class="container-fluid fluid">  <!-- filter -->
+		<div class="container-fluid ">
+			<div class="container">
+				<div class="row">
+					<div class="mr-auto p-2 bd-highlight col-lg-4 col-md-4 col-sm-4">
+						<div class="title">
+							<h4>LATEST PROJECT</h4>
+							<div class="progress height-progress">
+								<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<div class="p-2 bd-highlight col-lg-8 col-md-8 col-sm-8">
+						<ul class="simplefilter">
+							<li class="fltr-controls active" data-filter="all">SHOW ALL</li>
+							<li class="fltr-controls" data-filter="1">PHOTOGRAPHY</li>
+							<li class="fltr-controls" data-filter="2">BRANDING</li>
+							<li class="fltr-controls" data-filter="3">GRAPHIC DESIGN</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row push-down">
+					<div class="filtr-container">
+						<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="Busy streets">
+							<img class="img-responsive" src="nhom 3/images/pf1.jpg" alt="sample image">
+							<span class="item-desc">Busy Streets</span>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
+							<img class="img-responsive" src="nhom 3/images/pf2.jpg" alt="sample image">
+							<span class="item-desc">Luminous night</span>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="City wonders">
+							<img class="img-responsive" src="nhom 3/images/pf3.jpg" alt="sample image">
+							<span class="item-desc">city wonders</span>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="In production">
+							<img class="img-responsive" src="nhom 3/images/pf4.jpg" alt="sample image">
+							<span class="item-desc">in production</span>
+						</div>
+						<!-- <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 4" data-sort="Industrial site">
+							<img class="img-responsive" src="nhom 3/images/pf5.jpg" alt="sample image">
+							<span class="item-desc">industrial site</span>
+						</div> -->
+						<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+							<img class="img-responsive" src="nhom 3/images/pf6.jpg" alt="sample image">
+							<span class="item-desc">peaceful lake</span>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="City lights">
+							<img class="img-responsive" src="nhom 3/images/pf7.jpg" alt="sample image">
+							<span class="item-desc">city lights</span>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+							<img class="img-responsive" src="nhom 3/images/pf8.jpg" alt="sample image">
+							<span class="item-desc">dreamhouse</span>
+						</div>
+						<!-- <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+							<img class="img-responsive" src="nhom 3/images/pf1.jpg" alt="sample image">
+							<span class="item-desc">restless machines</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- <div class="row push-down"> -->
+		        <!-- <div class="filtr-container" style="height:100px !important;">
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Busy streets">
+		            <img class="img-responsive" src="img/pf1.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Luminous night">
+		            <img class="img-responsive" src="img/pf2.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="City wonders">
+		            <img class="img-responsive" src="img/pf3.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="In production">
+		            <img class="img-responsive" src="img/pf4.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Industrial site">
+		            <img class="img-responsive" src="img/pf8.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Peaceful lake">
+		            <img class="img-responsive" src="img/pf9.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="City lights">
+		            <img class="img-responsive" src="img/pf5.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Dreamhouse">
+		            <img class="img-responsive" src="img/pf6.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Dreamhouse">
+		            <img class="img-responsive" src="img/pf6.jpg" alt="sample image">
+		          </div>
+		          
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+		            <img class="img-responsive" src="img/pf7.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+		            <img class="img-responsive" src="img/pf7.jpg" alt="sample image">
+		          </div>
+		           <div style="clear:both"></div>
+		       </div> -->
+		       
+		       <!--  </div> -->
+		   <!-- <div class="row push-down">       TA
+		   	<div class="filtr-container">
+
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
+		   			<img class="img-responsive" src="nhom 3/images/pf1.jpg" alt="sample image">
+		   			<span class="item-desc">Luminous night</span>
+		   		</div>
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="City wonders">
+		   			<img class="img-responsive" src="nhom 3/images/pf7.jpg" alt="sample image">
+		   			<span class="item-desc">city wonders</span>
+		   		</div>
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="In production">
+		   			<img class="img-responsive" src="nhom 3/images/pf3.jpg" alt="sample image">
+		   			<span class="item-desc">in production</span>
+		   		</div>
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 4" data-sort="Industrial site">
+		   			<img class="img-responsive" src="nhom 3/images/pf1.jpg" alt="sample image">
+		   			<span class="item-desc">industrial site</span>
+		   		</div>
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+		   			<img class="img-responsive" src="nhom 3/images/pf7.jpg" alt="sample image">
+		   			<span class="item-desc">peaceful lake</span>
+		   		</div>
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="City lights">
+		   			<img class="img-responsive" src="nhom 3/images/pf7.jpg" alt="sample image">
+		   			<span class="item-desc">city lights</span>
+		   		</div>
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+		   			<img class="img-responsive" src="nhom 3/images/pf2.jpg" alt="sample image">
+		   			<span class="item-desc">dreamhouse</span>
+		   		</div>
+		   		<div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+		   			<img class="img-responsive" src="nhom 3/images/pf4.jpg" alt="sample image">
+		   			<span class="item-desc">restless machines</span>
+		   		</div>
+		   	</div>
+		   </div>
+		</div> -->
+		
+		<!-- </div> -->
+		<!-- <div class="container-fluid fluid">  filter
 			<div class="container">
 				<div class="work-header">
 					<div class="row">
@@ -881,7 +1005,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="container-fluid fluid woman">  <!-- WOMAN -->
 
@@ -1077,28 +1201,18 @@
 			</div>
 		</div>
 
-		<div class=" fluid "> <!--  MAP -->
+		<div class=" fluid zent-map "> <!--  MAP -->
 			
 			<div class="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9849751501147!2d105.84695211432353!3d20.99323938601767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6dce1c3075%3A0x1151330eb74574fe!2sZent+Space!5e0!3m2!1svi!2s!4v1547695376113" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="mapp"></iframe>
 			</div>
-			<div class="carousel-item active">
-				<div class="jumbotron jumbotron-header">
-					<div class="row">
-						<center>
-							<i class="fa fa-quote-left display-4 white col-lg-12 col-md-12 col-sm-12" aria-hidden="true"></i>
-							<!-- <h1 class="display-4 white"><b>WELCOME TO OUR LOGIC</b></h1> -->
-							<p class="lead white col-lg-12 col-md-12 col-sm-12 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							</p>
-
-
-						</center>
-
-					</div>
-
+			<div class="container container-map">
+				<div class="zent">
+					<i class="fa fa-map-marker markers" aria-hidden="true" ></i>
+					<h2 style="text-align: center;" class="white text-map">FIND US ON GOOGLE MAP</h2>
 				</div>
 			</div>
+			
 		</div>
 
 		<div class="container-fluid  footer">
@@ -1186,8 +1300,35 @@
 		<div class="scrollup">
 			<a href="#"><i class="fa fa-chevron-up"></i></a>
 		</div>
+		<script type="text/javascript" src="bootstrap-4.2.1-dist/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4.2.1-dist/js/bootstrap.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4.2.1-dist/js/jquery.counterup.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4.2.1-dist/js/wow.min.js"></script>
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		
+		<script type="text/javascript" src="bootstrap-4.2.1-dist/js/jquery.filterizr.min.js"></script>
+		<script src="bootstrap-4.2.1-dist/js/index.js"></script>
 		<script>
+			$(document).ready(function() {
+				$('.table-counter').counterUp({
+					delay: 10,
+					time: 1000
+				});
+			});
 			new WOW().init();
-		</script>
-	</body>
-	</html>
+			$(function() {
+				var f = $('.filtr-container').filterizr({ controlsSelector: '.fltr-controls' });
+				$('.color-container-1').filterizr({ controlsSelector: '.color-controls-1' });
+				$('.color-container-2').filterizr({ controlsSelector: '.color-controls-2', layout: 'packed' });
+				$('.color-container-3').filterizr({ controlsSelector: '.color-controls-3', layout: 'sameHeight' });
+	       
+	        window.filterizr = f;
+	    });
+			
+	</script>
+
+</body>
+</html>

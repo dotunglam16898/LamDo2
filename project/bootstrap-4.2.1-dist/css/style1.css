@@ -18,6 +18,9 @@
   opacity: 0.9;
   filter: alpha(opacity=50);
 }
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
 .bigg{
   position: relative;
 }
@@ -26,16 +29,20 @@
   top:30%;
   left: 6%;
 }
-#header{
+.bigg .row{
+  margin-left: 0px;
+}
+.header{
   position: absolute;
   top: 0;
   left: 0;
   position: fixed;
   background-color: rgba(34, 61, 97, 0.64);
   z-index: 1;
+
 }
-#header .header-logo img {
-    width: 80%;
+.header .header-logo img {
+   /* width: 80%;*/
     height: 35px;
 }
 .container {
@@ -88,7 +95,7 @@ background-image: url("../../nhom 3/images/testbg.jpg");
   color: white;
   /* font-size: 3.75rem;*/
 }
-.navbar-nav .active a:hover{
+.navbar-nav  a:hover{
   color: #FF7200;
   border-bottom: 1px solid #FF7200;
 }
@@ -238,11 +245,13 @@ background-image: url("../../nhom 3/images/testbg.jpg");
   height: 8px;
   width: 1%;
   transform: rotate(45deg);
+  position: relative;
 }
 .carousel-indicators .small{
    border: 1px solid #ddd;
     height: 10px;
     width: 0%;
+
 }
 .carousel-indicators .iron{
 border: 1px solid #ddd;
@@ -326,15 +335,31 @@ h4 {
   .intro{
     position: relative;
   }
+  .intro-child{
+    filter: brightness(30%);
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+  }
+  /*.nigga .img-fluid{
+    height: auto;
+  }*/
+  .container-woman{
+    position: absolute;
+    top: 167px;
+    left: 96px;
+  }
+  .playboy{
+    text-align: center;
+  }
   .roww{
     text-align: center;
   }
-  .introo{
+  /*.introo{
     position: absolute;
-    /*text-align: center;*/
+    text-align: center;
     top: 111px;
     left: 114px;
-  }
+  }*/
   .container-counter{
     position: relative;
   }
@@ -406,14 +431,37 @@ h4 {
     width: 0%;
 
 }*/
-.mapp{
+/*------------------------------------------------------------*/
+.mapp{                /*  MAP*/
   width: 100%;
   height: 171px;
     filter: brightness(30%);
   opacity: 0.9;
   filter: alpha(opacity=50);
+  
+}
+.zent-map{
+  
   position: relative;
 }
+.container-map{
+  position: absolute;
+  top: 76px;
+ /* left: 103px;*/
+}
+.zent{
+  text-align: center;
+}
+.markers{
+  color: #fff;
+    font-size: 2rem;
+}
+.text-map{
+  font-size: 26px;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+/*------------------------------------------------------------*/
 .puma{
   background-color: #eeeeee;
 }
